@@ -1,0 +1,13 @@
+{% sw_extends 'administration/module/sw-cms/page/sw-cms-detail/sw-cms-detail.html.twig' %}
+
+{% block sw_cms_detail_sidebar_block_overview_category %}
+<div class="sw-cms-detail__block-category">
+    <sw-select-field :label="$tc('sw-cms.detail.labelBlockCategorySelection')" v-model="currentBlockCategory">
+        <option value="text">{{ $tc('sw-cms.detail.labelBlockCategoryText') }}</option>
+        <option value="image">{{ $tc('sw-cms.detail.labelBlockCategoryImage') }}</option>
+        <option value="text-image">{{ $tc('sw-cms.detail.labelBlockCategoryTextImage') }}</option>
+        <option value="commerce">{{ $tc('sw-cms.detail.labelBlockCategoryCommerce') }}</option>
+        <option value="utopia">Utopia</option>
+    </sw-select-field>
+</div>
+{% endblock %}

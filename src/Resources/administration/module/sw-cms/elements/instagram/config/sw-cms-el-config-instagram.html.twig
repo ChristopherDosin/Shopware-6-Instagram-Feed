@@ -1,0 +1,23 @@
+{% block sw_cms_element_image_config %}
+<div class="sw-cms-el-config-instagram">
+    <sw-text-field
+        v-model="element.config.parameters.title"
+        placeholder="Instagram Title"
+        :copyable="false"
+        :copyableTooltip="false"
+        label="Instagram Titel"
+    >
+    </sw-text-field>
+
+    <sw-number-field
+        v-model="element.config.parameters.count"
+        numberType="float"
+        :step="1"
+        :min="1"
+        :max="10"
+        :value="5"
+        :digits="2"
+        label="Wie viele Bilder sollen ausgegeben werden?">
+    </sw-number-field>
+</div>
+{% endblock %}

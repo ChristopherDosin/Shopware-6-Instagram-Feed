@@ -1,0 +1,11 @@
+{% sw_extends 'administration/index.html.twig' %}
+
+{% block administration_stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/instagramfeed/administration/css/instagram-feed.css') }}" />
+{% endblock %}
+
+{% block administration_scripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/instagramfeed/administration/js/instagram-feed.js') }}"></script>
+{% endblock %}

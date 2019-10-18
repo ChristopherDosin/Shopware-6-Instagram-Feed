@@ -1,0 +1,48 @@
+{
+    "name": "vinkla/instagram",
+    "description": "An easy-to-use and simple Instagram package",
+    "keywords": [
+        "instagram",
+        "media",
+        "feed",
+        "recent"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Klaiber",
+            "email": "hello@doubledip.se",
+            "homepage": "https://doubledip.se"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "php-http/client-implementation": "^1.0",
+        "php-http/discovery": "^1.4",
+        "php-http/httplug": "^1.1 || ^2.0",
+        "php-http/message-factory": "^1.0"
+    },
+    "require-dev": {
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message": "^1.7",
+        "php-http/mock-client": "^1.1",
+        "phpunit/phpunit": "^8.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "9.3-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Vinkla\\Instagram\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vinkla\\Tests\\Instagram\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

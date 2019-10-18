@@ -1,0 +1,23 @@
+{
+  "name": "sas/instagram-feed-element",
+  "description": "Instagram Feed Plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+    "require": {
+        "vinkla/instagram": "^9.3",
+        "php-http/message": "^1.8",
+        "php-http/guzzle6-adapter": "^2.0"
+    },
+  "autoload": {
+    "psr-4": {
+      "InstagramFeed\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "InstagramFeed\\InstagramFeed",
+    "label": {
+      "de-DE": "Instagram Feed Element",
+      "en-GB": "Instagram Feed Element"
+    }
+  }
+}
